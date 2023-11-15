@@ -8,7 +8,13 @@ searchButton.addEventListener("click", onButtonClick);
 function onButtonClick() {
   const input = document.querySelector(".search-val");
   inputVal = input.value.trim();
-  getData();
+  if (inputVal === "") {
+    document.querySelector(
+      ".gallery-wrapper"
+    ).innerHTML = `<p>Please enter valid request</p>`;
+  } else {
+    getData();
+  }
   input.value = "";
 }
 
