@@ -1,0 +1,26 @@
+header {
+    background-color: rgba(var(--bs-primary-rgb));
+    color: rgba(var(--bs-tertiary-bg-rgb));
+    padding: 6px;
+}
+
+header img {
+    filter: invert(1);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.white-board {
+    margin: 3em auto;
+    padding: 1em;
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.gallery-wrapper img {
+    margin: 1em;
+    max-width: 10em;
+}
